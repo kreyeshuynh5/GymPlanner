@@ -3,7 +3,13 @@
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "target": "es5",
-    "lib": ["es2015", "es2016", "es2016.array.include", "scripthost", "dom"],
+    "lib": [
+      "es2015",
+      "es2016",
+      "es2016.array.include",
+      "scripthost",
+      "dom"
+    ],
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": false,
@@ -12,8 +18,18 @@
     "sourceMap": true,
     "outDir": "./build",
     "skipLibCheck": true,
-    "types": ["node", "jest"]
+    "types": [
+      "node",
+      "jest"
+    ]
   },
-  "include": ["./src"],
-  "exclude": ["./boilerplate", "./templates", "**/**.test.ts"]
+  "include": [
+    "./src"
+  ],
+  "exclude": [
+    "./boilerplate",
+    "./templates",
+    "**/**.test.ts"
+  ],
+  "extends": "expo/tsconfig.base"
 }
